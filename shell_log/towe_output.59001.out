@@ -1,0 +1,126 @@
+	Python3 anaconda is now loaded in your environment.
+
+	CUDA-10.2 loaded
+
+	GCC 9.1.0 environment now loaded
+
+Traceback (most recent call last):
+  File "train.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "train.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "train.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "train.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "train.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "train.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "train.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "train.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "train.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "train.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "train.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "train.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "train.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "train.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "train.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "train.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "train.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "train.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "train.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "train.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "train.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "train.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "train.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "train.py", line 7, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+python train.py --dataset 14lap --gcn_layers 0 --save_dir random1_layers0_14lap
+python train.py --dataset 14lap --gcn_layers 1 --save_dir random1_layers1_14lap
+python train.py --dataset 14lap --gcn_layers 2 --save_dir random1_layers2_14lap
+python train.py --dataset 14lap --gcn_layers 3 --save_dir random1_layers3_14lap
+python train.py --dataset 14lap --gcn_layers 4 --save_dir random1_layers4_14lap
+python train.py --dataset 14lap --gcn_layers 5 --save_dir random1_layers5_14lap
+python train.py --dataset 14res --gcn_layers 0 --save_dir random1_layers0_14res
+python train.py --dataset 14res --gcn_layers 1 --save_dir random1_layers1_14res
+python train.py --dataset 14res --gcn_layers 2 --save_dir random1_layers2_14res
+python train.py --dataset 14res --gcn_layers 3 --save_dir random1_layers3_14res
+python train.py --dataset 14res --gcn_layers 4 --save_dir random1_layers4_14res
+python train.py --dataset 14res --gcn_layers 5 --save_dir random1_layers5_14res
+python train.py --dataset 15res --gcn_layers 0 --save_dir random1_layers0_15res
+python train.py --dataset 15res --gcn_layers 1 --save_dir random1_layers1_15res
+python train.py --dataset 15res --gcn_layers 2 --save_dir random1_layers2_15res
+python train.py --dataset 15res --gcn_layers 3 --save_dir random1_layers3_15res
+python train.py --dataset 15res --gcn_layers 4 --save_dir random1_layers4_15res
+python train.py --dataset 15res --gcn_layers 5 --save_dir random1_layers5_15res
+python train.py --dataset 16res --gcn_layers 0 --save_dir random1_layers0_16res
+python train.py --dataset 16res --gcn_layers 1 --save_dir random1_layers1_16res
+python train.py --dataset 16res --gcn_layers 2 --save_dir random1_layers2_16res
+python train.py --dataset 16res --gcn_layers 3 --save_dir random1_layers3_16res
+python train.py --dataset 16res --gcn_layers 4 --save_dir random1_layers4_16res
+python train.py --dataset 16res --gcn_layers 5 --save_dir random1_layers5_16res
