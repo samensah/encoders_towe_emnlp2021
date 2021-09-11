@@ -5,7 +5,7 @@ parser = argparse.ArgumentParser(description="configs for target-oriented opinio
 
 parser.add_argument('--dataset', type=str, default='14res', help='dataset: laptop14, rest14, rest15 or rest16')
 parser.add_argument("--batch_size", type=int, default=16, help="batch size")
-parser.add_argument("--optimizer", type=str, default="adam", help="optimizer (or trainer)")
+parser.add_argument("--optimizer", type=str, default="adam", help="optimizer")
 parser.add_argument('--max_grad_norm', type=float, default=5.0, help='Gradient clipping.')
 parser.add_argument("--lr", type=float, default=1e-3, help="learning rate")
 parser.add_argument("--n_epoch", type=int, default=100, help="number of training epochs")
