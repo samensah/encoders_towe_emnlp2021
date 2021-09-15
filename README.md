@@ -1,4 +1,4 @@
-### A BiLSTM+GCN Encoder for Target-oriented Opinion Words Extraction
+## A BiLSTM+GCN Encoder for Target-oriented Opinion Words Extraction
 
 This repo contains the *PyTorch* implementation on the best performing model (BiLSTM+GCN) for paper [An Empirical Study on Leveraging Position Embeddings for Target-oriented Opinion Words Extraction](https://arxiv.org/abs/2109.01238).
 
