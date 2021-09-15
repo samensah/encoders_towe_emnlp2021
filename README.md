@@ -4,12 +4,12 @@ This repo contains the *PyTorch* implementation on the best performing model (Bi
 
 **The TOWE datasets**: Details on the TOWE Datasets can be found in [(Fan et al., 2019)](https://aclanthology.org/N19-1259.pdf).
 
-## Requirements
+### Requirements
 
 - Python 3 (tested on 3.6.13)
 - PyTorch (tested on 1.9.0)
 
-## Preparation
+### Preparation
 
 First, download and unzip `300-dim` GloVe vectors from the Stanford website into the directory `data/glove/`
 ```
@@ -24,7 +24,7 @@ For each dataset (e.g., 14lap), prepare vocabulary and initial word vectors with
 
 This will write `vocab.pkl` and `embedding.npy` into the dir `data/14lap`.
 
-## Training and Evaluation
+### Training and Evaluation
 
 Train and evaluate a BiLSTM+GCN encoder with:
 
@@ -36,7 +36,7 @@ The argument --gcn_layers takes an integer for the encoder
 
 Training a BiLSTM encoder has the corresponding `gcn_layers: 0`.
 
-## Alternative Training and Evaluation
+### Alternative Training and Evaluation
 
 Train and evaluate all datasets for different number of layers
 
