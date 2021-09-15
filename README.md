@@ -1,6 +1,6 @@
 ## A BiLSTM+GCN Encoder for Target-oriented Opinion Words Extraction
 
-This repo contains the *PyTorch* implementation on the best performing model (BiLSTM+GCN) for paper [An Empirical Study on Leveraging Position Embeddings for Target-oriented Opinion Words Extraction](https://arxiv.org/abs/2109.01238).
+This repo contains the official PyTorch implementation on the best performing model (BiLSTM+GCN) for paper [An Empirical Study on Leveraging Position Embeddings for Target-oriented Opinion Words Extraction](https://arxiv.org/abs/2109.01238) accepted at EMNLP2021.
 
 **The TOWE datasets**: Details on the TOWE Datasets can be found in [(Fan et al., 2019)](https://aclanthology.org/N19-1259.pdf).
 
@@ -42,3 +42,14 @@ Train and evaluate all datasets for different number of layers
 
 ```python run1.py```
 
+### Citation
+
+We currently have the arxiv [paper](https://arxiv.org/abs/2109.01238) you can cite if this code is beneficial to you:
+```bibtex
+@article{mensah2021empirical,
+  title={An Empirical Study on Leveraging Position Embeddings for Target-oriented Opinion Words Extraction},
+  author={Mensah, Samuel and Sun, Kai and Aletras, Nikolaos},
+  journal={arXiv preprint arXiv:2109.01238},
+  year={2021}
+}
+```
