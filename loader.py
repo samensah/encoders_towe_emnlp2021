@@ -16,7 +16,7 @@ class DataLoader(object):
         with open(file_path, 'r') as f:
             self.raw_data = json.load(f)
 
-        # generate sample id
+        # give each instance a unique id to sample by id
         count = 0
         for d in self.raw_data:
             d['sample_id'] = count
@@ -46,7 +46,8 @@ class DataLoader(object):
             # dict_keys(['tokens', 'POS', 'deprel', 'asp', 'opn'])
             tokens   = d['tokens']
             head     = d['head']
-            deprel_m = [['[PAD]' for _ in range(len(tokens))] for _ in range(len(tokens))]
+            # initialize an adjacency matrix for syntax dependencies among words
+            deprel_m = [['[PAD]' for _ in range(len(tokens))] for _ in range(len(tokens))] 
             deprel   = d['deprel']
             for i in range(len(head)):
                 if head[i] != 0:
@@ -100,11 +101,12 @@ class DataLoader(object):
             raise IndexError
         batch = self.data[key]
         batch_size = len(batch)
-        batch = list(zip(*batch))
+        batch = list(zip(*batch)) # restructure batch input for pytorch
+        # len batch -> len([d['sample_id'], tokens, position, POS, head, deprel, selfloop, mask_s, label])
         assert len(batch) == 9 
 
         # sort all fields by lens for easy RNN operations
-        lens = [len(x) for x in batch[1]]
+        lens = [len(x) for x in batch[1]] 
         batch, _ = sort_all(batch, lens)
 
         # convert to tensors

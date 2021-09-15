@@ -55,17 +55,17 @@ args.vocab_size = len(word_vocab)
 train_path  = '%s/train.json' % (dataset_path)
 test_path   = '%s/test.json'  % (dataset_path)
 
+print("Generating mappings to transform inputs into sequence of ids")
 # generate POS2id, bio2id, position2id, rel2id
 args.bio2id = {'O':0, 'B':1, 'I':2}
 POS_list, rel_list = ['[PAD]'], ['[PAD]', 'selfloop']
 max_len = -1
-print("Generating mappings")
+
 with open(train_path, 'r') as f:
     raw_train = json.load(f)
 with open(test_path, 'r') as f:
     raw_test = json.load(f)
 raw_data = raw_train + raw_test
-
 
 for d in raw_data:
     for POS in d['POS']:
@@ -75,7 +75,7 @@ for d in raw_data:
     for rel in d['deprel']:
         if rel not in rel_list:
             rel_list.append(rel)
-            rel_list.append("r_"+rel)
+            rel_list.append("r_"+rel) # adding a reverse relation
 
     if len(d['tokens']) > max_len:
         max_len = len(d['tokens'])

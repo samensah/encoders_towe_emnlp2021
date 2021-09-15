@@ -4,6 +4,7 @@ import torch.nn.functional as F
 from torch.autograd import Variable
 import numpy as np
 from model import *
+#import torch_utils # added
 
 class Trainer(object):
     def __init__(self, args, embedding_matrix=None):

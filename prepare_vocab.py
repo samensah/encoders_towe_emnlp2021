@@ -14,8 +14,8 @@ np.random.seed(1234)
 VOCAB_PREFIX = ['[PAD]', '[UNK]']
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Gnerate vocabulary for the atis or snips.")
-    parser.add_argument('--dataset', default='16res', help='dataset directory atis or snips.')
+    parser = argparse.ArgumentParser(description="Generate vocabulary and initial word vectors.")
+    parser.add_argument('--dataset', default='16res', help='dataset directory.')
     parser.add_argument('--wv_file', default='glove.840B.300d.txt', help='GloVe vector file.')
     parser.add_argument('--wv_dim', type=int, default=300, help='GloVe vector dimension.')
     args = parser.parse_args()
