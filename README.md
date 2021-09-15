@@ -31,7 +31,9 @@ Train and evaluate a BiLSTM+GCN encoder with:
 ```python train.py --dataset 14lap --gcn_layers 1 --save_dir best_model_log```
 
 This will train a BiLSTM+GCN encoder with a single GCN layer.
+
 The argument --gcn_layers takes an integer for the encoder
+
 Training a BiLSTM encoder has the corresponding `gcn_layers: 0`.
 
 ## Alternative Training and Evaluation
