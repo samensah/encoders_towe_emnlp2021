@@ -30,6 +30,10 @@ def evaluate_ts(gold_ts, pred_ts, length):
 
     return n_tp_ts, n_gold_ts, n_pred_ts, golden, pred 
 
+# this function takes the predicted sequence and output the corresponding list of two-tuples.
+# such as the input is ['B', 'I', 'B', 'O', 'O', 'B'].
+# then the output will be [(0,1), (2,2), (5,5)].
+# each element in the output is the begin index and end index of an extracted aspect.
 def tag2ts(ts_tag_sequence, ts_tag_vocab):
 
     ts_tag_vocab_ = {ts_tag_vocab[key]:key for key in ts_tag_vocab.keys()}
@@ -67,6 +71,7 @@ def tag2ts(ts_tag_sequence, ts_tag_vocab):
 
     return ts_sequence
 
+# this function compare the predicted tuples with the ground truth tuples
 def match_ts(gold_ts_sequence, pred_ts_sequence):
     hit_count, gold_count, pred_count = 0., 0., 0.
     for t in gold_ts_sequence:
@@ -76,7 +81,7 @@ def match_ts(gold_ts_sequence, pred_ts_sequence):
             hit_count += 1
         pred_count += 1
 
-    return hit_count, gold_count, pred_count
+    return hit_count, gold_count, pred_count # number of right, number of ground truth, number of extracted
 
 def evaluate_program(trainer, batches, args):
     eval_opn_loss, eval_step  = 0., 0
@@ -88,7 +93,7 @@ def evaluate_program(trainer, batches, args):
         eval_step += 1
 
         length = batch[7].sum(dim=1).tolist()
-        rights_n_t, labels_n_t, logits_n_t, _, _ = evaluate_ts(batch[-1].tolist(), pred, length)
+        rights_n_t, labels_n_t, logits_n_t, _, _ = evaluate_ts(batch[-1].tolist(), pred, length) # rights_n_t: number of right, number of ground truth, number of extracted in this batch
         labels_opn_n += labels_n_t
         logits_opn_n += logits_n_t
         rights_opn_n += rights_n_t
