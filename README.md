@@ -1,6 +1,6 @@
 ## A BiLSTM+GCN Encoder for Target-oriented Opinion Words Extraction
 
-This repo contains the official PyTorch implementation on the best performing model (BiLSTM+GCN) for paper [An Empirical Study on Leveraging Position Embeddings for Target-oriented Opinion Words Extraction](https://arxiv.org/abs/2109.01238) accepted at [EMNLP 2021](https://2021.emnlp.org/).
+This repo contains the official PyTorch implementation on the best performing model (BiLSTM+GCN) for paper [An Empirical Study on Leveraging Position Embeddings for Target-oriented Opinion Words Extraction](https://aclanthology.org/2021.emnlp-main.722.pdf) published in the proceedings at [EMNLP 2021](https://2021.emnlp.org/).
 
 **The TOWE datasets**: Details on the TOWE Datasets can be found in [(Fan et al., 2019)](https://aclanthology.org/N19-1259.pdf).
 
@@ -43,13 +43,19 @@ Train and evaluate all datasets for different number of layers
 ```python run1.py```
 
 ### Citation
-
-We currently have the arxiv [paper](https://arxiv.org/abs/2109.01238) you can cite if this code is beneficial to you:
+If this work is beneficial to you, please cite as:
 ```bibtex
-@article{mensah2021empirical,
-  title={An Empirical Study on Leveraging Position Embeddings for Target-oriented Opinion Words Extraction},
-  author={Mensah, Samuel and Sun, Kai and Aletras, Nikolaos},
-  journal={arXiv preprint arXiv:2109.01238},
-  year={2021}
+@inproceedings{mensah-etal-2021-empirical,
+    title = "An Empirical Study on Leveraging Position Embeddings for Target-oriented Opinion Words Extraction",
+    author = "Mensah, Samuel  and
+      Sun, Kai  and
+      Aletras, Nikolaos",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.722",
+    pages = "9174--9179",
 }
 ```
