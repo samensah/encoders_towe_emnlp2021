@@ -20,7 +20,9 @@ rm glove.840B.300d.zip
 
 For each dataset (e.g., 14lap), prepare vocabulary and initial word vectors with:
 
-```python prepare_vocab.py --dataset 14lap --wv_file glove.840B.300d.txt```
+```
+python prepare_vocab.py --dataset 14lap --wv_file glove.840B.300d.txt
+```
 
 This will write `vocab.pkl` and `embedding.npy` into the dir `data/14lap`.
 
@@ -28,7 +30,9 @@ This will write `vocab.pkl` and `embedding.npy` into the dir `data/14lap`.
 
 Train and evaluate a BiLSTM+GCN encoder with:
 
-```python train.py --dataset 14lap --gcn_layers 1 --save_dir best_model_log```
+```
+python train.py --dataset 14lap --gcn_layers 1 --save_dir best_model_log
+```
 
 This will train a BiLSTM+GCN encoder with a single GCN layer.
 
@@ -40,7 +44,9 @@ Training a BiLSTM encoder has the corresponding `gcn_layers: 0`.
 
 Train and evaluate all datasets for different number of layers
 
-```python run1.py```
+```
+python run1.py
+```
 
 ### Citation
 If this work is beneficial to you, please cite as:
