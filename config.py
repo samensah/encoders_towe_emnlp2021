@@ -17,6 +17,7 @@ parser.add_argument('--load_dir', type=str, default='./BiLSTM_case_study/best_mo
 parser.add_argument('--print_step', type=int, default=10, help='Print log every k steps in training process.')
 
 # network configurations
+# 14lap: lr: 0.00003, pos 100, bilstm_hidden 150
 parser.add_argument("--dim_bilstm_hidden", type=int, default=100, help="hidden dimension for the bilstm")
 parser.add_argument("--dim_w", type=int, default=300, help="word embedding dimension")
 parser.add_argument("--dim_POS", type=int, default=30, help="POS embedding dimension")
