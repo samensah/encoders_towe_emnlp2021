@@ -12,7 +12,7 @@ This repo contains the official PyTorch implementation on the best performing mo
 ### Preparation
 
 First, download and unzip `300-dim` GloVe vectors from the Stanford website into the directory `data/glove/`
-```
+```bash
 wget https://nlp.stanford.edu/data/glove.840B.300d.zip
 unzip glove.840B.300d.zip -d data/glove/
 rm glove.840B.300d.zip
